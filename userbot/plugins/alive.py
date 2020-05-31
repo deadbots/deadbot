@@ -12,9 +12,10 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "No name set yet, check pinned 
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     await alive.edit("   **Welcome To Dead Bot ** \n\n"
-        "**`Hey! I'm alive. All systems online and functioning normally... ψ(｀∇´)ψ`**\n\n"
-
-
-                     "` 🔸 Database Status:` **All OK 👌!**\n"
+        "**` ABE! ZINDA HUN🧐. Sab Sahi Chal Raha Hai   ... ψ(~_~)ψ`**\n\n"
+                      "` 🔸 Database Status:` **All OK 👌!**\n"
                      f"` 🔹 My proest owner`: {DEFAULTUSER}\n\n"
+
+         
+
 

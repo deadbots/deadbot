@@ -1,7 +1,7 @@
 """Available Commands:
 
-.unoob
-.menoob
+.leg
+.pro
 .upro
 .mepro
 
@@ -32,20 +32,20 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "unoob":
+    if input_str == "leg":
 
         await event.edit(input_str)
 
         animation_chars = [
-            "EvErYbOdY",
-            "iZ",
-            "BiGGeSt",
-            "NoOoB" ,
-            "uNtiL",
-            "YoU",
-            "aRriVe",
+            "DEAD",
+            "BOY",
+            "IS",
+            "THE" ,
+            "DAD",
+            "OF",
+            "LEGENDS",
             "😈",
-            "EvErYbOdY iZ BiGGeSt NoOoB uNtiL YoU aRriVe 😈"
+            "DEAD BOY IS THE DAD OF LEGENDS 😈"
         ]
 
         for i in animation_ttl:
@@ -69,20 +69,21 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "menoob":
+    if input_str == "pro":
 
         await event.edit(input_str)
 
         animation_chars = [
-            "EvErYbOdY",
-            "iZ",
-            "BiGGeSt",
-            "NoOoB" ,
-            "uNtiL",
-            "i",
-            "aRriVe",
-            "😈",
-            "EvErYbOdY iZ BiGGeSt NoOoB uNtiL i aRriVe 😈"
+            "DEAD",
+            "BOY",
+            "SE",
+            "LIYA" ,
+            "PANGA",
+            "TO",
+            "HO",
+            "JAYEGA",
+            "DANGA😈",
+            "DEAD BOY SE LIYA PANGA TO HO JAYEGA DANGA😈"
         ]
 
         for i in animation_ttl:
@@ -147,14 +148,14 @@ async def _(event):
         await event.edit(input_str)
 
         animation_chars = [
-            "EvErYbOdY",
-            "iZ",
-            "PeRu" ,
-            "uNtiL",
-            "i",
-            "aRriVe",
+            "Everybody",
+            "Was",
+            "Pro" ,
+            "Untill",
+            "I",
+            "Arrived",
             "😈",
-            "EvErYbOdY iZ PeRu uNtiL i aRriVe 😈"
+            "Everybody Was Pro Untill I Arrived 😈"
         ]
 
         for i in animation_ttl:

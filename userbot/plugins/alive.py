@@ -11,7 +11,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "No name set yet, check pinned 
 @command(outgoing=True, pattern="^.alive$")
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
-    await alive.edit("   **Welcome To TeleBot ** \n\n"
+    await alive.edit("   **Welcome To DeadBot ** \n\n"
         "**`Hey! I'm alive. All systems online and functioning normally... ψ(｀∇´)ψ`**\n\n"
                       "`🔸 Telethon version:` **6.9.0**\n` 🔹 Python:` **3.7.3** \n` 🔸 More info:` @TeleBotHelpChat\n"
                      "` 🔹 Bot created by:` [DEAD BOY](tg://user?id=1247419158)\n"

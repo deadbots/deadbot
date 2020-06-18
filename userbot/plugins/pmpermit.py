@@ -20,7 +20,7 @@ USER_BOT_NO_WARN = ("[...........███ ]▄▄▄▄▄▃ \n..▂▄▅█�
 
 
 if Var.PRIVATE_GROUP_ID is not None:
-    @command(pattern="^.approve ?(.*)")
+    @command(pattern="^.app ?(.*)")
     async def approve_p_m(event):
         if event.fwd_from:
            return
@@ -71,7 +71,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await asyncio.sleep(3)
                 await event.client(functions.contacts.BlockRequest(chat.id))
 
-    @command(pattern="^.disapprove ?(.*)")
+    @command(pattern="^.dis ?(.*)")
     async def approve_p_m(event):
         if event.fwd_from:
             return

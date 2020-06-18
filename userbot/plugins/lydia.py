@@ -11,7 +11,7 @@ if Var.LYDIA_API_KEY:
     api_client = API(api_key)
     lydia = LydiaAI(api_client)
 
-@command(pattern="^.repcf", outgoing=True)
+@command(pattern="^.rep", outgoing=True)
 async def repcf(event):
     if event.fwd_from:
         return
@@ -26,11 +26,11 @@ async def repcf(event):
     except Exception as e:
         await event.edit(str(e))
 
-@command(pattern="^.addcf", outgoing=True)
+@command(pattern="^.auto", outgoing=True)
 async def addcf(event):
     if event.fwd_from:
         return
-    await event.edit("Running on Non-SQL mode for now...")
+    await event.edit("Running Auto Chat Mod...")
     await asyncio.sleep(3)
     await event.edit("Processing...")
     reply_msg = await event.get_reply_message()
@@ -40,11 +40,11 @@ async def addcf(event):
         if reply_msg.from_id is None:
             return await event.edit("Invalid user type.")
         ACC_LYDIA.update({(event.chat_id & reply_msg.from_id): session})
-        await event.edit("Lydia successfully (re)enabled for user: {} in chat: {}".format(str(reply_msg.from_id), str(event.chat_id)))
+        await event.edit("Lydia successfully enabled for this user.")
     else:
         await event.edit("Reply to a user to activate Lydia AI on them")
 
-@command(pattern="^.remcf", outgoing=True)
+@command(pattern="^.rem", outgoing=True)
 async def remcf(event):
     if event.fwd_from:
         return
@@ -54,9 +54,9 @@ async def remcf(event):
     reply_msg = await event.get_reply_message()
     try:
         del ACC_LYDIA[event.chat_id & reply_msg.from_id]
-        await event.edit("Lydia successfully disabled for user: {} in chat: {}".format(str(reply_msg.from_id), str(event.chat_id)))
+        await event.edit("Autochat successfully disabled for this user.")
     except Exception:
-        await event.edit("This person does not have Lydia activated on him/her.")
+        await event.edit("This person does not have Autochat activated on him/her.")
 
 
 @bot.on(events.NewMessage(incoming=True))

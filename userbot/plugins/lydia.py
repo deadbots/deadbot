@@ -26,7 +26,7 @@ async def repcf(event):
     except Exception as e:
         await event.edit(str(e))
 
-@command(pattern="^.auto", outgoing=True)
+@command(pattern="^.autochat", outgoing=True)
 async def addcf(event):
     if event.fwd_from:
         return

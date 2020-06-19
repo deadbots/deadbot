@@ -83,7 +83,7 @@ async def _(event):
             "HO",
             "JAYEGA",
             "DANGA😈",
-            "SHREYA SE LIYA PANGA TO HO JAYEGA DANGA😈"
+            "SHREYA SE AGAR LIYA PANGA TO HO JAYEGA DANGA😈"
          ]
 
         for i in animation_ttl:

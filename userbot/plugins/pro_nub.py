@@ -46,7 +46,7 @@ async def _(event):
             "MY",
             "OWNER❤️",
             "THE MOST BEAUTIFUL 😍GIRL SHREYA IS MY OWNER❤️"
-        ]
+         ]
 
         for i in animation_ttl:
 
@@ -84,7 +84,7 @@ async def _(event):
             "JAYEGA",
             "DANGA😈",
             "SHREYA SE LIYA PANGA TO HO JAYEGA DANGA😈"
-        ]
+         ]
 
         for i in animation_ttl:
 

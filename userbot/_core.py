@@ -28,10 +28,10 @@ async def install(event):
                 path1 = Path(downloaded_file_name)
                 shortname = path1.stem
                 load_module(shortname.replace(".py", ""))
-                await event.edit("TeleBot Succesfully Installed The Plugin `{}`".format(os.path.basename(downloaded_file_name)))
+                await event.edit("DeadBot Succesfully Installed The Plugin `{}`".format(os.path.basename(downloaded_file_name)))
             else:
                 os.remove(downloaded_file_name)
-                await event.edit("TeleBot returned an error! Plugin cannot be installed.")
+                await event.edit("DeadBot returned an error! Plugin cannot be installed.")
         except Exception as e:  # pylint:disable=C0103,W0703
             await event.edit(str(e))
             os.remove(downloaded_file_name)
@@ -81,6 +81,6 @@ async def load(event):
         except:
             pass
         load_module(shortname)
-        await event.edit(f"TeleBot has successfully loaded {shortname}")
+        await event.edit(f"DeadBot has successfully loaded {shortname}")
     except Exception as e:
-        await event.edit(f"TeleBot could not load {shortname} because of the following error.\n{str(e)}")
+        await event.edit(f"DeadBot could not load {shortname} because of the following error.\n{str(e)}")

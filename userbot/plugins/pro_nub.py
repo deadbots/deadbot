@@ -1,11 +1,11 @@
 """Available Commands:
 
-.leg
+.shreya
+.panga
 .pro
-.upro
 .mepro
 
-@arnab431"""
+@dead_boy_here"""
 
 from telethon import events
 
@@ -25,27 +25,27 @@ async def _(event):
 
         return
 
-    animation_interval = 0.5
+    animation_interval = 0.10
     
 
     animation_ttl = range(0, 9)
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "leg":
+    if input_str == "shreya":
 
         await event.edit(input_str)
 
         animation_chars = [
-            "DEAD",
-            "BOY",
+            "THE",
+            "MOST",
+            "BEAUTIFUL",
+            "😍GIRL" ,
+            "SHREYA",
             "IS",
-            "THE" ,
-            "DAD",
-            "OF",
-            "LEGENDS",
-            "😈",
-            "DEAD BOY IS THE DAD OF LEGENDS 😈"
+            "MY",
+            "OWNER❤️",
+            "THE MOST BEAUTIFUL 😍GIRL SHREYA IS MY OWNER❤️"
         ]
 
         for i in animation_ttl:
@@ -69,21 +69,21 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "pro":
+    if input_str == "panga":
 
         await event.edit(input_str)
 
         animation_chars = [
-            "DEAD",
-            "BOY",
+            "SHREYA",
             "SE",
+            "AGAR",
             "LIYA" ,
             "PANGA",
             "TO",
             "HO",
             "JAYEGA",
             "DANGA😈",
-            "DEAD BOY SE LIYA PANGA TO HO JAYEGA DANGA😈"
+            "SHREYA SE LIYA PANGA TO HO JAYEGA DANGA😈"
         ]
 
         for i in animation_ttl:
@@ -107,19 +107,19 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "upro":
+    if input_str == "pro":
 
         await event.edit(input_str)
 
         animation_chars = [
-            "EvErYbOdY",
-            "iZ",
-            "PeRu" ,
-            "uNtiL",
-            "YoU",
-            "aRriVe",
+            "YOU",
+            "WERE",
+            "PRO",
+            "UNTILL",
+            "I (SHREYA)",
+            "ARRIVED",
             "😈",
-            "EvErYbOdY iZ PeRu uNtiL YoU aRriVe 😈"
+            "YOU WERE PRO UNTILL I (SHREYA) ARRIVED 😈"
         ]
 
         for i in animation_ttl:
@@ -143,19 +143,19 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "mepro":
+    if input_str == "atti":
 
         await event.edit(input_str)
 
         animation_chars = [
-            "Everybody",
-            "Was",
-            "Pro" ,
-            "Untill",
-            "I",
-            "Arrived",
-            "😈",
-            "Everybody Was Pro Untill I Arrived 😈"
+            "APNA",
+            "ATTITUDE",
+            "APNI",
+            "JEB",
+            "ME",
+            "RAKH",
+            "😒",
+            "APNA ATTITUDE APNI JEB ME RAKH 😒"
         ]
 
         for i in animation_ttl:

@@ -18,5 +18,5 @@ async def install(event):
     o = stdout.decode()
     _o = o.split("\n")
     o = "\n".join(_o)
-    OUTPUT = f"**List of Plugins:**\n{o}\n\n**TIP:** __If you want to know the commands for a plugin, do:-__ \n `.help <plugin name>` **without the < > brackets.**\n__All plugins might not work directly. Visit__ @TeleBotHelpChat __for assistance.__"
+    OUTPUT = f"**ʟɪsᴛ ᴏғ ᴘʟᴜɢɪɴs ɪɴ ᴅᴇᴀᴅʙᴏᴛ\nᴄᴜsᴛᴏᴍɪᴢᴇᴅ ғᴏʀ ᴏғғɪᴄɪᴀʟʟʏ ғᴏʀ sʜʀᴇʏᴀ\n\n**\n{o}\n\n**ᴛɪᴘ:** __ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴋɴᴏᴡ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs ғᴏʀ ᴀ ᴘʟᴜɢɪɴ, ᴅᴏ:-__ \n `. <plugin name>` **ᴡɪᴛʜᴏᴜᴛ ᴛʜᴇsᴇ < > ʙʀᴀᴄᴋᴇᴛs.**\n__ᴀʟʟ ᴘʟᴜɢɪɴs ᴍɪɢʜᴛ ɴᴏᴛ ᴡᴏʀᴋ ᴅɪʀᴇᴄᴛʟʏ..."
     await event.edit(OUTPUT)

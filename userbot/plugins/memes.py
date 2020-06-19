@@ -882,7 +882,7 @@ async def vapor(vpr):
 @register(outgoing=True, pattern="^.repo$")
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("ABE O!n DEADBOT KA REPO TERI AUKAT\ ME NAHI SIRF SHREYA KI AUKAT ME HAI")
+        await e.edit("ABE O!!! DEADBOT KA REPO TERI AUKAT ME NAHI SIRF SHREYA KI AUKAT ME HAI")
 			  
 			  
 @register(outgoing=True, pattern="^.str(?: |$)(.*)")

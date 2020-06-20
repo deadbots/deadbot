@@ -53,7 +53,7 @@ async def _(event):
         try:
             await borg.send_message(  # pylint:disable=E0602
                 Config.PRIVATE_GROUP_BOT_API_ID,  # pylint:disable=E0602
-                f"TeleBot set AFK mode to True, and Reason is {reason}"
+                f"DeadBot set AFK mode to True, and Reason is {reason}"
             )
         except Exception as e:  # pylint:disable=C0103,W0703
             logger.warn(str(e))  # pylint:disable=E0602
@@ -76,14 +76,14 @@ async def set_not_afk(event):
         try:
             await borg.send_message(  # pylint:disable=E0602
                 Config.PRIVATE_GROUP_BOT_API_ID,  # pylint:disable=E0602
-                "Set AFK mode to False"
+                "DeadBot set AFK mode to False"
             )
         except Exception as e:  # pylint:disable=C0103,W0703
             await borg.send_message(  # pylint:disable=E0602
                 event.chat_id,
                 "Please set `PRIVATE_GROUP_BOT_API_ID` " + \
                 "for the proper functioning of afk functionality " + \
-                "Ask @Dead_boy_here\nAnd message him for more info.\n\n `{}`".format(str(e)),
+                "Contact @Dead_boy_here for\n more info.\n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
                 silent=True
             )

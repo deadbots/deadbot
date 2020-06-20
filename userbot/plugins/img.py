@@ -14,7 +14,7 @@ from uniborg.util import admin_cmd
 
 @borg.on(admin_cmd(pattern="img ?(.*)"))
 async def img_sampler(event):
-    await event.edit("`Processing ...`")
+    await event.edit("`Getting imgs from google baba...`")
     reply = await event.get_reply_message()
     if event.pattern_match.group(1):
         query = event.pattern_match.group(1)
